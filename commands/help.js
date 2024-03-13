@@ -59,22 +59,17 @@ module.exports = {
         ) 
        .setImage('https://media.discordapp.net/attachments/1098307409463742497/1109763684244398161/GIF-230518_190400.gif?ex=65ffe7f8&is=65ed72f8&hm=f0c5195a67f196ebc6036ced314307567dc9722ec1bf4c4259355d30b5c5fab4&=')
       const button1 = new ButtonBuilder()
-        .setLabel('YouTube')
-        .setURL('https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A')
-        .setStyle(ButtonStyle.Link);
-
-      const button2 = new ButtonBuilder()
         .setLabel('Discord')
         .setURL('https://discord.gg/realskupee')
         .setStyle(ButtonStyle.Link);
 
-      const button3 = new ButtonBuilder()
+      const button2 = new ButtonBuilder()
         .setLabel('Support')
         .setURL('https://discord.gg/6arjh8DQpm')
         .setStyle(ButtonStyle.Link);
 
       const row = new ActionRowBuilder()
-        .addComponents(button1, button2, button3);
+        .addComponents(button1, button2);
 
       interaction.reply({
         embeds: [musicCommandsEmbed, basicCommandsEmbed],
